@@ -1,8 +1,8 @@
 version: "3"
 services:
-        chai_nagri:
-            container_name: chai-nagri
-            image: prathamrathore/chai_nagri
+        find_your_place:
+            container_name: find-your-place
+            image: pallavjain12/spe-major:latest
             restart: always
             ports:
               - "3000:3000"
@@ -14,4 +14,4 @@ services:
             volumes:
               - ./data:/data/db
             ports:
-              - '27017:27017'
+              - '27018:27017'
